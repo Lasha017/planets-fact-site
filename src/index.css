@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Antonio:wght@100..700&display=swap');
+*{
+  font-family: "Antonio", sans-serif;
+}
+body {
+    background: url(./assets/background.png);
+  }
