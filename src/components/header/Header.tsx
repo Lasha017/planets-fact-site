@@ -12,7 +12,7 @@ const Header = () => {
             <a href="/mercury">MERCURY</a>
             </li>
           <li className="h-full flex items-center border-b-2 border-transparent hover:border-white  transition duration-250 ease-in-out">
-            VENUS
+          <a href="/venus">VENUS</a>
           </li>
           <li className="h-full flex items-center border-b-2 border-transparent hover:border-white  transition duration-250 ease-in-out">
             EARTH

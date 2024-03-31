@@ -1,7 +1,8 @@
 import Header from "../../components/header/Header";
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import image from "../../assets/mercury.svg";
+import Image from "../../assets/mercury.svg";
+
 
 const Mercury = () => {
   const [data] = useState(jsonData);
@@ -18,7 +19,7 @@ const Mercury = () => {
                 <div className="flex  justify-between pt-[80px] ">
                   <div className="pl-[200px] pt-[100px]">
                     <img
-                      src={image}
+                      src={Image}
                       alt="mercury photo"
                       width="300px"
                       height="100"
@@ -28,7 +29,7 @@ const Mercury = () => {
                     <h1 className="text-white text-7xl">
                       {fact.name.toUpperCase()}
                     </h1>
-                    <p className="text-white font-sans font-spartan font-[100] text-[14px]">
+                    <p className="text-white font-sans font-spartan font-[400] text-[14px]">
                       {fact.overview.content}
                     </p>
                     <span className="text-[gray] font-normal flex font-sans font-spartan">
@@ -43,25 +44,47 @@ const Mercury = () => {
                         &#8599;
                       </span>
                     </span>
-                    <button
-                      className="border-[1px] border-slate-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
+                    <a
+                      href="/mercury"
+                      className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
                     >
                       <span className="">01</span>
-                      <span>OVERVIEW</span>
-                    </button>
+                      <span>OVERVIEW</span>{" "}
+                    </a>
 
-                    <button className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300">
+                    <a
+                      href="/mercury-structure"
+                      className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
+                    >
                       <span className="">02</span>
-                      <span>INTERNAL STRUCTURE</span>
-                    </button>
-                    <button className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300ƒ">
+                      <span>INTERNAL STRUCTURE</span>{" "}
+                    </a>
+                    <a
+                      href="/mercury-surface"
+                      className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
+                    >
                       <span className="">03</span>
-                      <span>SURFACE GEOLOGY</span>
-                    </button>
+                      <span>SURFACE GEOLOGY</span>{" "}
+                    </a>
                   </div>
                 </div>
-                <div>
-                  <h1 className="text-white pt-[100px]">LAST BOTTOM PART!!!!!!!</h1>
+                <div className="flex gap-[100px] justify-center pt-14">
+                  <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">ROTATION TIME</h3>
+                    <p className="text-white text-[30px]">{fact.rotation}</p>
+                  </div>
+                  <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">REVOLUTION TIME</h3>
+                    <p className="text-white text-[30px]">{fact.revolution}</p>
+                  </div>
+                  <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">RADIUS</h3>
+                    <p className="text-white text-[30px]">{fact.radius}</p>
+                  </div>
+                  <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">AVERAGE TEMP.</h3>
+                    <p className="text-white text-[30px]">{fact.temperature}</p>
+                  </div>
                 </div>
               </div>
             </>

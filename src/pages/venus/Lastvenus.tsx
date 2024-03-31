@@ -1,10 +1,10 @@
 import Header from "../../components/header/Header";
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import Image from "../../assets/venus.svg";
+import Image from "../../assets/venusLast.png";
 
 
-const Venus = () => {
+const Lastvenus = () => {
   const [data] = useState(jsonData);
 
   return (
@@ -16,7 +16,7 @@ const Venus = () => {
           return (
             <>
               <div className="pr-[200px] pl-[200px]">
-                <div className="flex  justify-between pt-[80px] ">
+                <div className="flex  justify-between pt-[60px] ">
                   <div className="pl-[200px] pt-[100px]">
                     <img
                       src={Image}
@@ -30,12 +30,12 @@ const Venus = () => {
                       {fact.name.toUpperCase()}
                     </h1>
                     <p className="text-white font-sans font-spartan font-[400] text-[14px]">
-                      {fact.overview.content}
+                      {fact.geology.content}
                     </p>
                     <span className="text-[gray] font-normal flex font-sans font-spartan">
                       <p className="text-sm"> source :</p>
                       <a
-                        href={fact.overview.source}
+                        href={fact.geology.source}
                         className="text-[gray] font-[700] underline pl-2 text-sm font-sans font-spartan"
                       >
                         Wikipedia
@@ -94,4 +94,4 @@ const Venus = () => {
   );
 };
 
-export default Venus;
+export default Lastvenus;

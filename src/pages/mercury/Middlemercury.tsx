@@ -1,17 +1,16 @@
 import Header from "../../components/header/Header";
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import Image from "../../assets/venus.svg";
+import Image from "../../assets/mercuryMiddle.png";
 
-
-const Venus = () => {
+const Middlemercury = () => {
   const [data] = useState(jsonData);
 
   return (
     <>
       <Header />
       {data
-        .filter((item) => item.name === "Venus")
+        .filter((item) => item.name === "Mercury")
         .map((fact) => {
           return (
             <>
@@ -30,12 +29,12 @@ const Venus = () => {
                       {fact.name.toUpperCase()}
                     </h1>
                     <p className="text-white font-sans font-spartan font-[400] text-[14px]">
-                      {fact.overview.content}
+                      {fact.structure.content}
                     </p>
                     <span className="text-[gray] font-normal flex font-sans font-spartan">
                       <p className="text-sm"> source :</p>
                       <a
-                        href={fact.overview.source}
+                        href={fact.structure.source}
                         className="text-[gray] font-[700] underline pl-2 text-sm font-sans font-spartan"
                       >
                         Wikipedia
@@ -45,7 +44,7 @@ const Venus = () => {
                       </span>
                     </span>
                     <a
-                      href="/venus"
+                      href="/mercury"
                       className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
                     >
                       <span className="">01</span>
@@ -53,14 +52,14 @@ const Venus = () => {
                     </a>
 
                     <a
-                      href="/venus-structure"
+                      href="/mercury-structure"
                       className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
                     >
                       <span className="">02</span>
                       <span>INTERNAL STRUCTURE</span>{" "}
                     </a>
                     <a
-                      href="/venus-surface"
+                      href="/mercury-surface"
                       className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
                     >
                       <span className="">03</span>
@@ -70,19 +69,27 @@ const Venus = () => {
                 </div>
                 <div className="flex gap-[100px] justify-center pt-14">
                   <div className="border-[1px] border-slate-500 p-6 w-[255px]">
-                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">ROTATION TIME</h3>
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
+                      ROTATION TIME
+                    </h3>
                     <p className="text-white text-[30px]">{fact.rotation}</p>
                   </div>
                   <div className="border-[1px] border-slate-500 p-6 w-[255px]">
-                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">REVOLUTION TIME</h3>
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
+                      REVOLUTION TIME
+                    </h3>
                     <p className="text-white text-[30px]">{fact.revolution}</p>
                   </div>
                   <div className="border-[1px] border-slate-500 p-6 w-[255px]">
-                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">RADIUS</h3>
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
+                      RADIUS
+                    </h3>
                     <p className="text-white text-[30px]">{fact.radius}</p>
                   </div>
                   <div className="border-[1px] border-slate-500 p-6 w-[255px]">
-                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">AVERAGE TEMP.</h3>
+                    <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
+                      AVERAGE TEMP.
+                    </h3>
                     <p className="text-white text-[30px]">{fact.temperature}</p>
                   </div>
                 </div>
@@ -94,4 +101,4 @@ const Venus = () => {
   );
 };
 
-export default Venus;
+export default Middlemercury;
