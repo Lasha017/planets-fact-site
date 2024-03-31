@@ -1,15 +1,16 @@
 const Header = () => {
+
   return (
     <><header className="flex flex-col justify-between pt-10 pr-10 pl-10 pb-4">
     <div className="flex justify-between  items-center">
       <div>
-        <h1 className="text-slate-50 text-[28px]">THE PLANETS</h1>
+        <a href="/" className="text-slate-50 text-[28px] cursor-pointer">THE PLANETS</a>
       </div>
       <div>
         <ul className="flex text-slate-50 gap-16 cursor-pointer">
           <li className="h-full flex items-center border-b-2 border-transparent hover:border-white  transition duration-250 ease-in-out">
-            MERCURY
-          </li>
+            <a href="/mercury">MERCURY</a>
+            </li>
           <li className="h-full flex items-center border-b-2 border-transparent hover:border-white  transition duration-250 ease-in-out">
             VENUS
           </li>
