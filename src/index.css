@@ -6,3 +6,20 @@
 body {
     background: url(./assets/background.png);
   }
+@keyframes spin {
+    from {transform:rotate(0deg);}
+    to {transform:rotate(360deg);}
+  }
+.loader {
+  animation: spin 10s linear infinite;
+  margin-bottom: 50px;
+}
+#gap {
+  gap: 50px;
+}
+#gap1 {
+  gap: 20px;
+}
+#gap2 {
+  gap: 20px;
+}

@@ -1,11 +1,11 @@
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import Image from "../../assets/earth.svg";
+import Image from "../../assets/mars.svg";
 import Planet from "../landing/planet/Planet";
 
-const LastEarth = () => {
+const MarsMiddle = () => {
   const [data] = useState(jsonData);
-  const filteredData = data.filter((planet) => planet.name === "Earth");
+  const filteredData = data.filter((planet) => planet.name === "Mars");
 
   return (
     <>
@@ -14,14 +14,14 @@ const LastEarth = () => {
           key={planet.name}
           name={planet.name}
           src={Image}
-          text={planet.geology.content}
-          firstBtn="/earth"
-          secondBtn="/earth-structure"
-          thirdBtn="/earth-surface"
+          text={planet.structure.content}
+          firstBtn="/mars"
+          secondBtn="/mars-structure"
+          thirdBtn="/mars-surface"
         />
       ))}
     </>
   );
 };
 
-export default LastEarth;
+export default MarsMiddle;

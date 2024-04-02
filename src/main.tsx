@@ -1,16 +1,22 @@
 import ReactDOM from "react-dom/client";
 import "./index.css";
-import 'tailwindcss/tailwind.css'
+import "tailwindcss/tailwind.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Home, Mercury, Venus } from "./pages/index.ts";
-import Middlemercury from "./pages/mercury/Middlemercury.tsx";
-import Lastmercury from "./pages/mercury/Lastmercury.tsx";
-import Middlevenus from "./pages/venus/Middlevenus.tsx";
-import Lastvenus from "./pages/venus/Lastvenus.tsx";
-
-
-
-
+import {
+  Home,
+  Mercury,
+  MiddleMercury,
+  LastMercury,
+  Venus,
+  MiddleVenus,
+  LastVenus,
+  Earth,
+  MiddleEarth,
+  LastEarth,
+  Mars,
+  LastMars,
+  MarsMiddle,
+} from "./pages/index.ts";
 
 const router = createBrowserRouter([
   {
@@ -23,11 +29,11 @@ const router = createBrowserRouter([
   },
   {
     path: "/mercury-structure",
-    element: <Middlemercury />,
+    element: <MiddleMercury />,
   },
   {
     path: "/mercury-surface",
-    element: <Lastmercury/>,
+    element: <LastMercury />,
   },
   {
     path: "/venus",
@@ -35,12 +41,36 @@ const router = createBrowserRouter([
   },
   {
     path: "/venus-structure",
-    element: <Middlevenus />
+    element: <MiddleVenus />,
   },
   {
     path: "/venus-surface",
-    element: <Lastvenus />
-  }
+    element: <LastVenus />,
+  },
+  {
+    path: "/earth",
+    element: <Earth />,
+  },
+  {
+    path: "/earth-structure",
+    element: <MiddleEarth />,
+  },
+  {
+    path: "/earth-surface",
+    element: <LastEarth />,
+  },
+  {
+    path: "/mars",
+    element: <Mars />,
+  },
+  {
+    path: "/mars-structure",
+    element: <MarsMiddle />,
+  },
+  {
+    path: "/mars-surface",
+    element: <LastMars />,
+  },
 ]);
 
 ReactDOM.createRoot(document.getElementById("root")!).render(
