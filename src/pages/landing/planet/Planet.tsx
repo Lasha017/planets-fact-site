@@ -1,7 +1,8 @@
 import { useEffect } from "react";
 import Header from "../../../components/header/Header";
+import { PlanetProps } from "./types";
 
-const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }: any) => {
+const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }:PlanetProps) => {
   useEffect(() => {
     document.title = "Planets";
   });
@@ -66,29 +67,29 @@ const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }: any) => {
           </div>
         </div>
         <div className="flex gap-[100px] justify-center pt-10 h-[170px]">
-          <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+          <div className="border-[1px] h-[100px] border-slate-500 p-6 w-[255px]">
             <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
               ROTATION TIME
             </h3>
-            <p className="text-white text-[30px]">58.6 Days</p>
+            <p className="text-white text-[24px]">58.6 Days</p>
           </div>
-          <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+          <div className="border-[1px] h-[100px] border-slate-500 p-6 w-[255px]">
             <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
               REVOLUTION TIME
             </h3>
-            <p className="text-white text-[30px]">87.97 Days</p>
+            <p className="text-white text-[24px]">87.97 Days</p>
           </div>
-          <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+          <div className="border-[1px] h-[100px] border-slate-500 p-6 w-[255px]">
             <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
               RADIUS
             </h3>
-            <p className="text-white text-[30px]">6,051.8 KM</p>
+            <p className="text-white text-[24px]">6,051.8 KM</p>
           </div>
-          <div className="border-[1px] border-slate-500 p-6 w-[255px]">
+          <div className="border-[1px] h-[100px] border-slate-500 p-6 w-[255px]">
             <h3 className="text-[gray] font-[400] text-[10px] font-sans font-spartan">
               AVERAGE TEMP.
             </h3>
-            <p className="text-white text-[30px]">471°c</p>
+            <p className="text-white text-[24px]">471°c</p>
           </div>
         </div>
       </div>

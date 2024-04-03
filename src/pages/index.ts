@@ -11,4 +11,15 @@ export { default as LastEarth } from "./earth/LastEarth.tsx";
 export { default as Mars } from "./mars/Mars.tsx";
 export { default as MarsMiddle } from "./mars/MarsMiddle.tsx";
 export { default as LastMars } from "./mars/MarsLast.tsx";
-
+export { default as Jupiter } from "./jupiter/Jupiter.tsx";
+export { default as JupiterMiddle } from "./jupiter/JupiterMiddle.tsx";
+export { default as JupiterLast } from "./jupiter/JupiterLast.tsx";
+export { default as Neptune } from "./neptune/Neptune.tsx";
+export { default as MiddleNeptune } from "./neptune/MiddleNeptune.tsx";
+export { default as LastNeptune } from "./neptune/LastNeptune.tsx";
+export { default as Saturn } from "./saturn/Saturn.tsx";
+export { default as MiddleSaturn } from "./saturn/MiddleSaturn.tsx";
+export { default as LastSaturn } from "./saturn/LastSaturn.tsx";
+export { default as Uranus } from "./uranus/Uranus.tsx";
+export { default as MiddleUranus } from "./uranus/MiddleUranus.tsx";
+export { default as LastUranus } from "./uranus/LastUranus.tsx";

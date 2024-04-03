@@ -16,6 +16,18 @@ import {
   Mars,
   LastMars,
   MarsMiddle,
+  Jupiter,
+  JupiterMiddle,
+  JupiterLast,
+  Neptune,
+  MiddleNeptune,
+  LastNeptune,
+  Saturn,
+  MiddleSaturn,
+  LastSaturn,
+  Uranus,
+  MiddleUranus,
+  LastUranus,
 } from "./pages/index.ts";
 
 const router = createBrowserRouter([
@@ -70,6 +82,54 @@ const router = createBrowserRouter([
   {
     path: "/mars-surface",
     element: <LastMars />,
+  },
+  {
+    path: "/jupiter",
+    element: <Jupiter />,
+  },
+  {
+    path: "/jupiter-structure",
+    element: <JupiterMiddle />,
+  },
+  {
+    path: "/jupiter-surface",
+    element: <JupiterLast />,
+  },
+  {
+    path: "/saturn",
+    element: <Saturn />,
+  },
+  {
+    path: "/saturn-structure",
+    element: <MiddleSaturn />,
+  },
+  {
+    path: "/saturn-surface",
+    element: <LastSaturn />,
+  },
+  {
+    path: "/neptune",
+    element: <Neptune />,
+  },
+  {
+    path: "/neptune-structure",
+    element: <MiddleNeptune />,
+  },
+  {
+    path: "/neptune-surface",
+    element: <LastNeptune />,
+  },
+  {
+    path: "/uranus",
+    element: <Uranus />,
+  },
+  {
+    path: "/uranus-structure",
+    element: <MiddleUranus />,
+  },
+  {
+    path: "/uranus-surface",
+    element: <LastUranus />,
   },
 ]);
 
