@@ -3,7 +3,7 @@ import { useState } from "react";
 import Image from "../../assets/mercuryMiddle.png";
 import Planet from "../landing/planet/Planet";
 
-const MiddleMercury: React.FC = () => {
+const MiddleMercury= () => {
   const [data] = useState(jsonData);
   const filteredData = data.filter((planet) => planet.name === "Mercury");
 
