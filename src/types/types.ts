@@ -1,6 +1,6 @@
 export interface PlanetProps {
     name: string;
-    src: string;
+    src: any;
     text: string;
     firstBtn: string;
     secondBtn: string;

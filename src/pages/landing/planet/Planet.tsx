@@ -1,6 +1,6 @@
 import { useEffect } from "react";
 import Header from "../../../components/header/Header";
-import { PlanetProps } from "./types";
+import { PlanetProps } from "../../../types/types";
 
 const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }:PlanetProps) => {
   useEffect(() => {
