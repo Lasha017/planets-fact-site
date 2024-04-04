@@ -25,7 +25,7 @@ const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }:PlanetProps) 
           <div className="flex flex-col gap-5 w-[300px]">
             <div className="flex flex-col" id="gap1">
               <h1 className="text-white text-7xl">{name.toUpperCase()}</h1>
-              <p className="text-white font-sans font-spartan font-[400] text-[12px]">
+              <p className="text-white font-sans font-spartan font-[400] text-[12px] h-[150px]">
                 {text}
               </p>
               <span className="text-[gray] font-normal flex font-sans font-spartan">
