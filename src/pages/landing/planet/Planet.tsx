@@ -1,4 +1,5 @@
 import { useEffect } from "react";
+import { Link } from "react-router-dom"; 
 import Header from "../../../components/header/Header";
 import { PlanetProps } from "../../../types/types";
 
@@ -11,8 +12,8 @@ const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }:PlanetProps) 
     <>
       <Header />
       <div className="px-[200px] 2xl:pl-[300px] md:max-xl:px-[50px] md:max-xl:pb-[50px]">
-        <div className="flex  justify-between pt-[60px]  md:max-xl:g-[50px]  md:max-xl:flex-col  md:max-xl:items-center">
-          <div className="pl-[200px] pt-[100px] md:max-xl:pl-[0px]  md:max-xl:pt-[0px]">
+        <div className="flex justify-between pt-[60px] md:max-xl:g-[50px] md:max-xl:flex-col md:max-xl:items-center">
+          <div className="pl-[200px] pt-[100px] md:max-xl:pl-[0px] md:max-xl:pt-[0px]">
             <img
               src={src}
               alt={`${name} photo`}
@@ -42,27 +43,27 @@ const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }:PlanetProps) 
             </div>
 
             <div className="flex flex-col" id="gap2">
-              <a
-                href={firstBtn}
+              <Link
+                to={firstBtn}
                 className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
               >
                 <span className="">01</span>
                 <span>OVERVIEW</span>{" "}
-              </a>
-              <a
-                href={secondBtn}
+              </Link>
+              <Link
+                to={secondBtn}
                 className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
               >
                 <span>02</span>
                 <span>INTERNAL STRUCTURE</span>{" "}
-              </a>
-              <a
-                href={thirdBtn}
+              </Link>
+              <Link
+                to={thirdBtn} 
                 className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
               >
                 <span>03</span>
                 <span>SURFACE GEOLOGY</span>{" "}
-              </a>
+              </Link>
             </div>
           </div>
         </div>
