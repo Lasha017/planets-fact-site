@@ -1,6 +1,6 @@
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import Image from "../../assets/saturn.svg";
+import Image from "../../assets/planet-saturn-internal.svg";
 import Planet from "../landing/planet/Planet";
 
 

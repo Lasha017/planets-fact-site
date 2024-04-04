@@ -1,6 +1,6 @@
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import Image from "../../assets/earth.svg";
+import Image from "../../assets/planet-earth-internal.svg";
 import Planet from "../landing/planet/Planet";
 
 const MiddleEarth = () => {

@@ -2,7 +2,8 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <header className="flex flex-col justify-between pt-6 pr-10 pl-10 pb-4">
+    <>
+      <header className="flex flex-col justify-between pt-6 pr-10 pl-10 pb-4">
       <div
         className="flex justify-between  items-center md:max-xl:flex-col  md:max-xl:g-20"
         id="gap"
@@ -42,6 +43,8 @@ const Header = () => {
         </div>
       </div>
     </header>
+      <div className="bg-gray-600 w-auto h-[1px]"></div>
+    </>
   );
 };
 

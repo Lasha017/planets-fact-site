@@ -1,6 +1,6 @@
 import jsonData from "../../api/planets.json";
 import { useState } from "react";
-import Image from "../../assets/mars.svg";
+import Image from "../../assets/planet-mars-internal.svg";
 import Planet from "../landing/planet/Planet";
 
 const MarsMiddle = () => {
