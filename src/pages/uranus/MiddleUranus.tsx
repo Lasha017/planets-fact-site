@@ -16,9 +16,9 @@ const MiddleUranus = () => {
           name={planet.name}
           src={Image}
           text={planet.structure.content}
-          firstBtn="/mercury"
-          secondBtn="/mercury-structure"
-          thirdBtn="/mercury-surface"
+          firstBtn="/uranus"
+          secondBtn="/uranus-structure"
+          thirdBtn="/uranus-surface"
         />
       ))}
     </>

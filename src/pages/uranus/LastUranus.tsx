@@ -16,9 +16,9 @@ const LastUranus = () => {
           name={planet.name}
           src={Image}
           text={planet.geology.content}
-          firstBtn="/mercury"
-          secondBtn="/mercury-structure"
-          thirdBtn="/mercury-surface"
+          firstBtn="/uranus"
+          secondBtn="/uranus-structure"
+          thirdBtn="/uranus-surface"
         />
       ))}
     </>
