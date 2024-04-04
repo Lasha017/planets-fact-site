@@ -44,14 +44,14 @@ const Planet = ({ name, src, text, firstBtn, secondBtn, thirdBtn }:PlanetProps) 
 
             <div className="flex flex-col" id="gap2">
               <Link
-                to={firstBtn}
+                to={firstBtn} 
                 className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
               >
                 <span className="">01</span>
                 <span>OVERVIEW</span>{" "}
               </Link>
               <Link
-                to={secondBtn}
+                to={secondBtn} 
                 className="border-[1px] border-slate-500 hover:bg-sky-blue-500 text-white flex p-2 gap-5 pl-[40px] hover:bg-[#419EBB] transition duration-300"
               >
                 <span>02</span>

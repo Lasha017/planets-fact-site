@@ -2,33 +2,31 @@ import ReactDOM from "react-dom/client";
 import "./index.css";
 import "tailwindcss/tailwind.css";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import {
-  Home,
-  Mercury,
-  MiddleMercury,
-  LastMercury,
-  Venus,
-  MiddleVenus,
-  LastVenus,
-  Earth,
-  MiddleEarth,
-  LastEarth,
-  Mars,
-  LastMars,
-  MarsMiddle,
-  Jupiter,
-  JupiterMiddle,
-  JupiterLast,
-  Neptune,
-  MiddleNeptune,
-  LastNeptune,
-  Saturn,
-  MiddleSaturn,
-  LastSaturn,
-  Uranus,
-  MiddleUranus,
-  LastUranus,
-} from "./pages/index.ts";
+import Home from "./pages/landing/Landing";
+import Mercury from "./pages/mercury/Mercury";
+import MiddleMercury from "./pages/mercury/MiddleMercury";
+import LastMercury from "./pages/mercury/LastMercury";
+import Venus from "./pages/venus/Venus";
+import MiddleVenus from "./pages/venus/MiddleVenus";
+import LastVenus from "./pages/venus/LastVenus";
+import Earth from "./pages/earth/Earth";
+import MiddleEarth from "./pages/earth/MiddleEarth";
+import LastEarth from "./pages/earth/LastEarth";
+import Mars from "./pages/mars/Mars";
+import MarsMiddle from "./pages/mars/MarsMiddle";
+import Jupiter from "./pages/jupiter/Jupiter";
+import JupiterMiddle from "./pages/jupiter/JupiterMiddle";
+import Saturn from "./pages/saturn/Saturn";
+import JupiterLast from "./pages/jupiter/JupiterLast";
+import MiddleSaturn from "./pages/saturn/MiddleSaturn";
+import LastSaturn from "./pages/saturn/LastSaturn";
+import Neptune from "./pages/neptune/Neptune";
+import MiddleNeptune from "./pages/neptune/MiddleNeptune";
+import LastNeptune from "./pages/neptune/LastNeptune";
+import Uranus from "./pages/uranus/Uranus";
+import MiddleUranus from "./pages/uranus/MiddleUranus";
+import LastUranus from "./pages/uranus/LastUranus";
+import MarsLast from "./pages/mars/MarsLast";
 
 const router = createBrowserRouter([
   {
@@ -81,7 +79,7 @@ const router = createBrowserRouter([
   },
   {
     path: "/mars-surface",
-    element: <LastMars />,
+    element: <MarsLast />,
   },
   {
     path: "/jupiter",
